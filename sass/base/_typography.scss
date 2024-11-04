@@ -1,0 +1,26 @@
+.header-primary {
+  font-family: "Rajdhani";
+  color: $color-black;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.header-primary.header-primary--white {
+  color: $color-white;
+}
+
+.header-secondary {
+  display: block;
+  font-family: "Rajdhani";
+  color: $color-white;
+  font-size: 20px;
+  font-weight: 800;
+}
+.header-secondary.header-secondary--dark {
+  color: $color-black;
+}
+
+.header-secondary.header-secondary--purple {
+  color: $color-primary;
+}

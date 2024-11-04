@@ -1,0 +1,30 @@
+.color-purple {
+  color: $color-primary;
+}
+.text-center {
+  text-align: center;
+}
+
+.divider {
+  height: 3px;
+  width: 30%;
+  background-color: #3b1379;
+}
+
+.divider.divider--sm {
+  width: 3%;
+}
+.name {
+  font-size: 20px;
+  color: #3b1379;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.name.name--black {
+  color: #000;
+}
+.position {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}

@@ -1,0 +1,93 @@
+.section-footer {
+  padding-top: 6rem;
+  background-color: #2e003f;
+  color: #ffff;
+  .footer {
+    gap: 3rem;
+    @media (max-width: 59em) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 59em) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 34em) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    &__mission {
+      padding-right: 4rem;
+      .logo {
+        font-family: sans-serif;
+        font-size: 3rem;
+        font-weight: 900;
+      }
+      .logo,
+      .mission-text {
+        padding-bottom: 3rem;
+      }
+      @media (max-width: 34em) {
+        padding-right: 0rem;
+      }
+    }
+    &__nav-heading {
+      font-size: 25px;
+      font-family: "Rajdhani";
+      font-weight: 800;
+      padding-bottom: 3rem;
+    }
+    &__nav.newsletter {
+      form {
+        padding-top: 1.5rem;
+        & input {
+          border-radius: 5px;
+          width: 80%;
+          padding: 1rem 2rem;
+          background-color: transparent;
+          border: 1px solid rgb(255, 255, 255, 0.3);
+        }
+        & input:focus {
+          outline: 2px solid #4b0082;
+          border: #4b0082;
+          box-shadow: 0 0 5px rgba(58, 122, 228, 0.5);
+        }
+        Button {
+          align-self: start;
+        }
+      }
+    }
+    &_links-item li:not(:last-child) {
+      padding-bottom: 3rem;
+    }
+    &__link {
+      color: #dcdada;
+      i {
+        color: $color-primary;
+        margin-right: 1rem;
+      }
+    }
+    &__link:hover {
+      color: $color-primary;
+    }
+
+    &__copyright {
+      align-items: center;
+      padding: 2rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      grid-column: 1/-1;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      gap: 1rem;
+      i {
+        padding: 2rem;
+        border-radius: 50%;
+        background-color: #4b0082;
+      }
+      @media (max-width: 59em) {
+        flex-direction: column;
+      }
+    }
+  }
+}

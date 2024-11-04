@@ -1,0 +1,110 @@
+.swiper.swiper--hero {
+  margin-top: -100px;
+  width: 100%;
+  height: 140vh;
+  box-shadow: none !important;
+  .swiper-slide {
+    justify-content: center;
+  }
+
+  .swiper-content {
+    gap: 2rem;
+    padding: 0 0 0 6rem;
+    margin-top: 15rem;
+
+    .swiper-content div {
+      padding: 0 0 3rem;
+    }
+
+    & p {
+      color: $color-white;
+    }
+    & div {
+      gap: 2rem;
+      padding-top: 2rem;
+    }
+  }
+  // slider 2
+  .swiper-slide.slider--2 {
+    align-items: center;
+    justify-content: center;
+    .slider-content {
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+
+  .swiper-slide {
+    background-image: url("../assets/img/home/hero-slider/slider-img--1.gif "); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .swiper-slide.slider--2 {
+    background-image: url("../assets/img/home/hero-slider/slider-img--2.png"); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #ffff;
+    background-color: rgba(33, 32, 32, 0.5);
+    padding: 1rem 1rem;
+    border-radius: 3px;
+    @media (max-width: 34em) {
+      & {
+        display: none;
+      }
+    }
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: $color-primary;
+  }
+}
+
+// swiper testimonial
+.swiper.swiper--testimonial {
+  width: 100%;
+  height: min-content;
+  box-shadow: none !important;
+  .swiper-slide {
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+    i {
+      color: #ff9000;
+      font-size: 20px;
+    }
+    p {
+      color: #000;
+      font-size: 18px;
+      padding: 0 12rem;
+      line-height: 2;
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: -150px;
+    color: #ffff;
+    background-color: $color-primary;
+    height: 50px;
+    width: 50px;
+    padding: 1rem;
+    border-radius: 50%;
+    @media (max-width: 34em) {
+      & {
+        display: none;
+      }
+    }
+  }
+}
